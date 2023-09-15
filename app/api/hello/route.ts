@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import {NextRequest} from 'next/server';
-
+prisma
 export function GET(request:NextRequest) {
 
 };
