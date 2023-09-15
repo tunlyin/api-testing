@@ -10,9 +10,9 @@ export function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
     try{
     const reqBody = await request.json();
-    // console.log(reqBody);
+    console.log(reqBody);
     const createUser= await prisma.user.create({
-        // Object Destructing
+        // Object Destructing 
         data:{
             ...reqBody
         }
